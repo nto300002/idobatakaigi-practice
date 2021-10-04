@@ -9,6 +9,7 @@ const MessageField = ({name, setText, text, inputEl}) => {
     <TextField
       autoFocus
       fullWidth={true} 
+      inputRef={inputEl}
       onChange={(e) => {setText(e.target.value)}}
       onKeyDown={(e) => {
         if(isComposed) return;
