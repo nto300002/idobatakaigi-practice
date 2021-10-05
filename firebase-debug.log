@@ -1,0 +1,152 @@
+[debug] [2021-10-05T12:55:27.541Z] ----------------------------------------------------------------------
+[debug] [2021-10-05T12:55:27.545Z] Command:       /Users/yasuda/.nodebrew/node/v12.18.4/bin/node /Users/yasuda/Downloads/practice/idobatakaigi/idobatakaigi-practice/node_modules/.bin/firebase deploy
+[debug] [2021-10-05T12:55:27.545Z] CLI Version:   8.12.1
+[debug] [2021-10-05T12:55:27.545Z] Platform:      darwin
+[debug] [2021-10-05T12:55:27.546Z] Node Version:  v12.18.4
+[debug] [2021-10-05T12:55:27.576Z] Time:          Tue Oct 05 2021 21:55:27 GMT+0900 (GMT+09:00)
+[debug] [2021-10-05T12:55:27.576Z] ----------------------------------------------------------------------
+[debug] [2021-10-05T12:55:27.577Z] 
+[debug] [2021-10-05T12:55:27.592Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-10-05T12:55:27.594Z] > authorizing via signed-in user
+[debug] [2021-10-05T12:55:27.594Z] [iam] checking project idobatakaigi-77d9c for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-10-05T12:55:27.604Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/idobatakaigi-77d9c:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-10-05T12:55:28.495Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 05 Oct 2021 12:55:28 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=566","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-05T12:55:28.498Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/idobatakaigi-77d9c  
+ 
+[debug] [2021-10-05T12:55:29.006Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 05 Oct 2021 12:55:28 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'idobatakaigi-77d9c'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-10-05T12:55:29.012Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/idobatakaigi-77d9c-default-rtdb/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-10-05T12:55:30.038Z] <<< HTTP RESPONSE 500 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Tue, 05 Oct 2021 12:55:30 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-05T12:55:30.039Z] <<< HTTP RESPONSE BODY {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2021-10-05T12:55:30.200Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": 500,
+        "message": "Internal error encountered.",
+        "status": "INTERNAL"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Tue, 05 Oct 2021 12:55:30 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1beta1/sites/idobatakaigi-77d9c-default-rtdb/versions",
+        "path": "/v1beta1/sites/idobatakaigi-77d9c-default-rtdb/versions",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/idobatakaigi-77d9c-default-rtdb/versions"
+      },
+      "method": "POST"
+    }
+  }
+}
+[debug] [2021-10-05T12:57:10.091Z] ----------------------------------------------------------------------
+[debug] [2021-10-05T12:57:10.093Z] Command:       /Users/yasuda/.nodebrew/node/v12.18.4/bin/node /Users/yasuda/Downloads/practice/idobatakaigi/idobatakaigi-practice/node_modules/.bin/firebase deploy
+[debug] [2021-10-05T12:57:10.093Z] CLI Version:   8.12.1
+[debug] [2021-10-05T12:57:10.093Z] Platform:      darwin
+[debug] [2021-10-05T12:57:10.093Z] Node Version:  v12.18.4
+[debug] [2021-10-05T12:57:10.095Z] Time:          Tue Oct 05 2021 21:57:10 GMT+0900 (GMT+09:00)
+[debug] [2021-10-05T12:57:10.095Z] ----------------------------------------------------------------------
+[debug] [2021-10-05T12:57:10.095Z] 
+[debug] [2021-10-05T12:57:10.103Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-10-05T12:57:10.103Z] > authorizing via signed-in user
+[debug] [2021-10-05T12:57:10.103Z] [iam] checking project idobatakaigi-77d9c for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-10-05T12:57:10.106Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/idobatakaigi-77d9c:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-10-05T12:57:10.344Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 05 Oct 2021 12:57:10 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=127","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-05T12:57:10.347Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/idobatakaigi-77d9c  
+ 
+[debug] [2021-10-05T12:57:10.908Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 05 Oct 2021 12:57:10 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'idobatakaigi-77d9c'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-10-05T12:57:10.918Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/idobatakaigi-77d9c-default-rtdb/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-10-05T12:57:13.529Z] <<< HTTP RESPONSE 500 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Tue, 05 Oct 2021 12:57:13 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-05T12:57:13.530Z] <<< HTTP RESPONSE BODY {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2021-10-05T12:57:13.858Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": 500,
+        "message": "Internal error encountered.",
+        "status": "INTERNAL"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Tue, 05 Oct 2021 12:57:13 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1beta1/sites/idobatakaigi-77d9c-default-rtdb/versions",
+        "path": "/v1beta1/sites/idobatakaigi-77d9c-default-rtdb/versions",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/idobatakaigi-77d9c-default-rtdb/versions"
+      },
+      "method": "POST"
+    }
+  }
+}
